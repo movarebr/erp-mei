@@ -8,6 +8,7 @@ import {
   FileText,
   AlertTriangle,
   CheckCircle,
+  Calculator,
 } from 'lucide-react'
 import {
   ResponsiveContainer,
