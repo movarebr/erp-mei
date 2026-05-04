@@ -119,7 +119,13 @@ export default function Clientes() {
                 <button
                   onClick={() => {
                     setEditingItem(cliente)
-                    setForm(cliente)
+                    setForm({
+                      nome: cliente.nome,
+                      cpf_cnpj: cliente.cpf_cnpj || '',
+                      email: cliente.email || '',
+                      telefone: cliente.telefone || '',
+                      endereco: cliente.endereco || '',
+                    })
                     setModalOpen(true)
                   }}
                   className="p-2 text-gray-400 hover:text-gray-600"
